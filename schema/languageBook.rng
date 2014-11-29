@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  ns="http://www.oxygenxml.com/ns/languageBook">
+
+  <include href="common.rng"/>
+
+  <start>
+    <ref name="languageBook.element"/>
+  </start>
+
+  <define name="languageBook.element">
+    <element name="languageBook">
+      <ref name="title.element"/>
+      <oneOrMore>
+        <ref name="section.element"/>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <define name="section.element">
+    <element name="section">
+      <ref name="title.element"/>
+      <ref name="abstract.element"/>
+      <ref name="topics.element"/>
+    </element>
+  </define>
+
+  <define name="title.element">
+    <element name="title">
+      <text/>
+    </element>
+  </define>
+
+
+  <define name="abstract.element">
+    <element name="abstract">
+      <ref name="topLevelContent"/>
+    </element>
+  </define>
+  
+  <define name="topics.element">
+    <element name="topics">
+      <zeroOrMore>
+        <ref name="topicref.element"/>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="topicref.element">
+    <element name="topicref">
+      <attribute name="href">
+        <data type="anyURI"/>
+      </attribute>
+    </element>
+  </define>
+</grammar>

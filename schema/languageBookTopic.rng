@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  ns="http://www.oxygenxml.com/ns/languageBook">
+
+  <include href="common.rng"/>
+
+  <start>
+    <ref name="topic.element"/>
+  </start>
+
+  <define name="topic.element">
+    <element name="topic">
+      <ref name="author.element"/>
+      <ref name="term.element"/>
+      <ref name="what.element"/>
+      <ref name="why.element"/>
+      <ref name="bio.element"/>
+      <ref name="picture.element"/>
+      <ref name="email.element"/>
+      <ref name="website.element"/>
+      <ref name="twitter.element"/>
+      <ref name="linkedin.element"/>
+      <oneOrMore>
+        <ref name="facebook.element"/>
+      </oneOrMore>
+      <ref name="description.element"/>
+      <ref name="resources.element"/>
+      <ref name="audio.element"/>
+    </element>
+  </define>
+
+  <define name="term.element">
+    <element name="term">
+      
+      <text/>
+    </element>
+  </define>
+
+  <define name="author.element">
+    <element name="author">
+      <text/>
+    </element>
+  </define>
+
+  <define name="bio.element">
+    <element name="bio">
+      <ref name="topLevelContent"/>
+    </element>
+  </define>
+
+  <define name="picture.element">
+    <element name="picture">
+      <optional>
+        <attribute name="href">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+    </element>
+  </define>
+
+  <define name="email.element">
+    <element name="email">
+      <text/>
+    </element>
+  </define>
+
+  <define name="website.element">
+    <element name="website">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Enter here your website name: <b>www.example.com</b></p>
+      </div>
+      <text/>
+    </element>
+  </define>
+
+  <define name="twitter.element">
+    <element name="twitter">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Enter here your twitter ID: <b>@example</b></p>
+      </div>
+      <text/>
+    </element>
+  </define>
+
+  <define name="linkedin.element">
+    <element name="linkedin">
+      <text/>
+    </element>
+  </define>
+
+  <define name="facebook.element">
+    <element name="facebook">
+      <text/>
+    </element>
+  </define>
+
+
+  <define name="what.element">
+    <element name="what">
+      <text/>
+    </element>
+  </define>
+
+  <define name="why.element">
+    <element name="why">
+      <text/>
+    </element>
+  </define>
+
+  <define name="description.element">
+    <element name="description">
+      <ref name="topLevelContent"/>
+    </element>
+  </define>
+
+  <define name="resources.element">
+    <element name="resources">
+      <ref name="topLevelContent"/>
+    </element>
+  </define>
+  <define name="audio.element">
+    <element name="audio">
+      <data type="anyURI"/>
+    </element>
+  </define>
+</grammar>
