@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic xmlns="http://www.oxygenxml.com/ns/languageBook">
+  <author>Cheryl Landes</author>
+  <term>Findability</term>
+  <what>The quality of being able to be discovered and retrieved through
+    searching or browsing.</what>
+  <why>Content must be found to be consumed. Therefore, findability is
+    critical in a world with a growing demand for fast, contextual
+    retrieval of information.</why>
+  <bio>
+    <p>Cheryl Landes founded <link
+        href="http://www.tabbycatco.com/about.html">Tabby Cat
+        Communications</link> in Seattle in 1995. She has 22 years of
+      experience as a technical communicator in computer software,
+      HVAC/energy savings, marine transportation, manufacturing, and
+      retail. She specializes as a findability strategist, helping
+      businesses organize content to flow logically and make content
+      easier to retrieve.</p>
+  </bio>
+  <picture href="../images/clandes-94833-pp-clandes.png"/>
+  <email>clandes407@aol.com</email>
+  <website>www.tabbycatco.com</website>
+  <twitter>@landesc</twitter>
+  <linkedin>www.linkedin.com/in/clandes</linkedin>
+  <facebook>https://www.facebook.com/cheryl.landes.58</facebook>
+  <description>
+    <p>“The reason people hire content strategists is that people can’t
+      find anything,” says content strategy expert, Rahel Anne
+      Bailie.</p>
+    <p>Your organization can have the best content: simple,
+      understandable technical documentation; elegant, cleverly crafted
+      marketing prose; or viral-worthy videos. But if search engines
+      cannot understand your content or consumers can’t find it, then no
+      one will ever get to read that information or watch that video.
+      Content is only as good as the consumer’s ability to find it
+      quickly and easily. If they can’t find your content, they’ll look
+      elsewhere.</p>
+    <p>Readers find information with a combination of two intentional
+      methods: navigation and search. However, they also encounter
+      information. </p>
+    <p><emphasis>Navigation</emphasis> means using the available options
+      and contextual clues to locate content. Buttons, tabs, tables of
+      contents, menus, links, and indexes are common navigation options
+      online. In print, readers navigate with the help of tables of
+      content, indices, and page numbers.</p>
+    <p><emphasis>Search</emphasis> is the act of looking for specific
+      content by entering a query in a search engine or application.
+      Users form queries with keywords or search terms, and the search
+      engine displays the query results based on its index and
+      understanding of the request.</p>
+    <p>Increasing the findability of content means ensuring that content
+      has appropriate metadata and structure so that search engines and
+      consumers can locate and retrieve relevant content as needed—as
+      well as making it more likely consumers will encounter the
+      information they need. Well-designed navigation and content
+      designed for search help serve up the content consumers want, when
+      they want it.</p>
+  </description>
+  <resources>
+    <p><link
+        href="http://www.amazon.com/Ambient-Findability-Peter-Morville/dp/0596007655/findability-20/"
+        >Ambient Findability</link>, by Peter Morville. O'Reilly Media.
+      2009.</p>
+    <p><link
+        href="http://www.amazon.com/Information-Architecture-World-Wide-Web/dp/0596527349"
+        >Information Architecture for the World Wide Web</link>, by
+      Peter Morville and Louis Rosenfeld. O'Reilly Media. 3rd Edition,
+      2006.</p>
+  </resources>
+  <audio>https://soundcloud.com/theaudiowrangler/findability</audio>
+</topic>

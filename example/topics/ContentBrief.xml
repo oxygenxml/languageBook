@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic xmlns="http://www.oxygenxml.com/ns/languageBook">
+  <author>Colleen Jones</author>
+  <term>Content Brief</term>
+  <what>A summary or statement of your plan for a content project. For
+    large projects, a content brief summarizes your plan for each
+    project phase.</what>
+  <why>By clearly answering key questions about your content, the
+    content brief reduces the risk of content issues causing delays. The
+    brief also makes communicating about content during the project
+    faster, easier, and more effective.</why>
+  <bio>
+    <p>As principal of Content Science and author of the top-selling
+      industry book, <link
+        href="http://content-science.com/clout-the-book">Clout</link>,
+      Colleen Jones has advised organizations ranging from Dell to The
+      Coca-Cola Company to Wiley. With an M.A. and over 15 years of
+      experience, Colleen regularly speaks at industry conferences
+      around the world and gives guest lectures for academic
+      institutions.</p>
+  </bio>
+  <picture href="../images/cjonesProfilePhoto.png"/>
+  <email>colleen@content-science.com</email>
+  <website>http://content-science.com</website>
+  <twitter>@leenjones</twitter>
+  <linkedin>www.linkedin.com/in/leenjones</linkedin>
+  <facebook/>
+  <description>
+    <p>Content strategists need this term and, more importantly, this
+      tool so they can communicate effectively about content throughout
+      a project or project phase. The content brief aligns everyone
+      involved in content around the vision or goal and the approach to
+      achieving it. As a project progresses, when questions arise, new
+      people get involved, or your team must make decisions, the content
+      brief will help everyone involved stay true to the content vision
+      and approach.</p>
+    <p>Typically, the content brief answers the six W and H questions
+      including (but not limited to):</p>
+    
+    <list>
+      <item>
+        <p>What are we trying to achieve with content? </p>
+      </item>
+      <item>
+        <p>Why are we trying to achieve it—to meet what business or
+          organizational purpose? </p>
+      </item>
+      <item>
+        <p>Who is our audience? </p>
+      </item>
+      <item>
+        <p>Who will be involved in planning, creating, and maintaining
+          content? </p>
+      </item>
+      <item>
+        <p>When will our audience need or expect content? </p>
+      </item>
+      <item>
+        <p>When will we plan, create, and maintain content? </p>
+      </item>
+      <item>
+        <p>Where do our audiences need or expect content and in what
+          formats? </p>
+      </item>
+      <item>
+        <p>How will we structure our content for our content management
+          system?</p>
+      </item>
+    </list>
+    <p>Do not assume that a creative brief, a design brief, or a
+      technology brief will cover content! Usually, those briefs leave
+      content out or address only certain aspects of content. Content is
+      critical to most projects, and content is often complex and
+      involves many stakeholders. Therefore, content deserves its own
+      brief. </p>
+  
+  </description>
+  <resources>
+    <p><link href="http://content-science.com/clout-the-book/">Clout:
+        The Art + Science of Influential Web Content</link></p>
+  </resources>
+  <audio>https://soundcloud.com/theaudiowrangler/12-content-brief-content-strategy-term-of-the-week</audio>
+</topic>

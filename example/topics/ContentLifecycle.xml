@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic xmlns="http://www.oxygenxml.com/ns/languageBook">
+  <author>Robert Rose</author>
+  <term>Content Lifecycle</term>
+  <what>The process that defines the series of changes in the life of
+    any piece of content, including reproduction, from creation
+    onward.</what>
+  <why>Content creates meaning; the content lifecycle creates a
+    repeatable process that defines how meaningful communication will be
+    managed.</why>
+  <bio>
+    <p>Robert Rose helps marketers become stellar storytellers. He is
+      the Chief Strategist for the <link
+        href="http://www.contentmarketinginstitute.com/">Content
+        Marketing Institute</link>, and Senior Contributing Analyst for
+        <link href="http://www.digitalclaritygroup.com/">Digital Clarity
+        Group</link>. Robert is the author of the industry-leading book
+        <link href="http://managingcontentmarketing.wordpress.com/"
+        >Managing Content Marketing</link>, which spent two weeks as a
+      top 10 marketing book on <link href="http://amazon.com/"
+        >Amazon.com</link>.</p>
+  </bio>
+  <picture href="../images/rroseProfilePhoto.png"/>
+  <email>robert@bigbluemoose.net</email>
+  <website>http://www.robert-rose.com</website>
+  <twitter>@Robert_Rose</twitter>
+  <linkedin>http://www.linkedin.com/in/robrose</linkedin>
+  <facebook>http://www.Facebook.com/TheRobertRose</facebook>
+  <description>
+    <p>The content lifecycle includes five general stages:</p>
+    <list>
+      <item>
+        <p>Strategic analysis </p>
+      </item>
+      <item>
+        <p>Content collection </p>
+      </item>
+      <item>
+        <p>Content management </p>
+      </item>
+      <item>
+        <p>Publication and post-publication maintenance </p>
+      </item>
+      <item>
+        <p>Preservation or re-purposing of content and a loop back to
+          analysis for the next cycle</p>
+      </item>
+    </list>
+    <p>Content is a business asset that should be managed as carefully
+      as any product or differentiating intellectual property. An
+      organization’s ability to have efficient and effective management
+      of its content through the entire lifecycle can mean the
+      difference between success and failure.</p>
+    <p>The stages within the content lifecycle can have sub-stages that
+      depend on the origins, purposes, and governance models of the
+      content. These may include sub-stages that support specific
+      channels such as web content, print, or email or specific formats
+      of content such as spoken word, video, text, or images.</p>
+    <p>It is less important what the stages are called and more
+      important that the practitioner have a unified process for
+      managing the entirety of the lifecycle. As Ann Rockley wrote in
+      her seminal work, <link
+        href="http://www.managingenterprisecontent.com/">Managing
+        Enterprise Content: A Unified Content Strategy</link>, to
+      counter content silos, the practitioner should create “a
+      repeatable method of identifying all content requirements up
+      front, creating consistently structured content for reuse,
+      managing that content in a definitive source, and assembling
+      content on demand to meet your customer’s needs.”</p>
+  </description>
+  <resources>
+    <p><link
+        href="http://www.gollner.ca/2013/09/the-content-lifecycle.html"
+        >The Content Lifecycle</link> by Joe Gollner</p>
+  </resources>
+  <audio>https://soundcloud.com/theaudiowrangler/content-lifecycle</audio>
+</topic>

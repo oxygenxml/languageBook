@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic xmlns="http://www.oxygenxml.com/ns/languageBook">
+  <author>Laurence Dansokho</author>
+  <term>Content Quality Assurance</term>
+  <what>A systematic process to ensure that content meets specified
+    requirements before publishing.</what>
+  <why>To measure the quality of the content creation process and ensure
+    that content deliverables are completed with an acceptable level of
+    quality.</why>
+  <bio>
+    <p>Laurence Dansokho is Tools and Process Manager at <link
+        href="http://www.ebay.com/">eBay</link>, responsible for global
+      content process optimization and quality control. She graduated in
+      journalism at the University of Leipzig, has quality management
+      experience, including a Six Sigma Yellow Belt and certification in
+        <link
+        href="http://www.iso.org/iso/catalogue_detail?csnumber=46486"
+        >ISO 9001:2008 Quality Management</link>, and is also a
+      certified Usability Practitioner. </p>
+  </bio>
+  <picture href="../images/ldansokhoProfilePhoto.png"/>
+  <email>fazut@web.de</email>
+  <website/>
+  <twitter>@LaurenceFD</twitter>
+  <linkedin>http://www.linkedin.com/pub/laurence-dansokho/8/344/a22</linkedin>
+  <facebook/>
+  <description>
+    <p>Content quality assurance is a key component of content quality
+      management. Quality assurance focuses on the processes you use to
+      develop content, ensuring that your content creation processes
+      produce quality deliverables. Content quality assurance
+      comprises:</p>
+    <list>
+      <item>
+        <p><strong>Content creation processes:</strong> For example,
+          authoring and page building processes.</p>
+      </item>
+      <item>
+        <p><strong>Quality standards and stakeholder
+            expectations:</strong> For example, tone and voice
+          compliance, style guide compliance, link standards, and
+          content accuracy.</p>
+      </item>
+      <item>
+        <p><strong>Quality assurance activities that monitor content
+            creation:</strong> For example, quality audits, reviews
+          against authoring guidelines, peer reviews, subject matter
+          expert reviews, page load time tests, link tests, and
+          usability tests.</p>
+      </item>
+      <item>
+        <p><strong>Quality assurance scheduling:</strong> For example,
+          schedules for how often and when quality assurance activities
+          will be performed.</p>
+      </item>
+    </list>
+    <p>Quality targets depend on the project, and you need to identify
+      targets for each content deliverable. You can create a content
+      quality scorecard, which could indicate fail/pass or a way to rank
+      the issues. This will help you prioritize and identify improvement
+      opportunities.</p>
+  </description>
+  <resources/>
+  <audio>https://soundcloud.com/theaudiowrangler/content-quality-assurance</audio>
+</topic>

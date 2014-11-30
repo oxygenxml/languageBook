@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<languageBook xmlns="http://www.oxygenxml.com/ns/languageBook">
+  <title>The Language of Content Strategy</title>
+  <section>
+    <title>Core Concepts</title>
+    <abstract>
+      <p>This section covers the foundational terms that underpin the
+        discipline of content strategy. These concepts become the shot
+        of thread that strengthens the fabric of work built upon it.
+        Understanding these concepts and their importance enhances the
+        understanding of the entire lexicon and of the work before us as
+        practitioners.</p>
+    </abstract>
+    <topics>
+      <topicref href="topics/Content.xml"/>
+      <topicref href="topics/ContentStrategy.xml"/>
+      <topicref href="topics/ContentLifecycle.xml"/>
+      <topicref href="topics/ContentStandard.xml"/>
+      <topicref href="topics/Findability.xml"/>
+      <topicref href="topics/ContentQualityAssurance.xml"/>
+    </topics>
+  </section>
+  <section>
+    <title>Core Deliverables</title>
+    <abstract>
+      <p>Content strategy projects can take on many forms, to solve a
+        great range of business problems. At the heart of the practice,
+        however, are some common project deliverables. These are by no
+        means an absolute set of deliverables, but they are some of the
+        most common ones. These deliverables create a baseline
+        understanding of the content in a project: the current state,
+        the desired outcomes, and the analyses done to discover
+        gaps.</p>
+    </abstract>
+    <topics>
+      <topicref href="topics/ContentBrief.xml"/>
+      <topicref href="topics/RequirementsMatrix.xml"/>
+    </topics>
+  </section>
+</languageBook>
+

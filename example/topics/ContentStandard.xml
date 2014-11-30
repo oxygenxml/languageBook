@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic xmlns="http://www.oxygenxml.com/ns/languageBook">
+  <author>Mark Lewis</author>
+  <term>Content Standard</term>
+  <what>A design or definition (expressed in a modeling language)
+    considered by an authority as an approved model. Standards include
+    structural and semantic models, processes, and presentation
+    semantics models.</what>
+  <why>Provides a normative language that facilitates exchange between
+    systems, process automation, and process integration. Enables
+    search, retrieval, sorting, content management, workflow, and
+    publishing.</why>
+  <bio>
+    <p>Mark Lewis is the author of <link
+        href="http://ditametrics101.com/">DITA Metrics 101</link> and is
+      a contributing author of <link href="http://www.dita101.com/">DITA
+        101: Fundamentals of the Darwin Information Architecture for
+        Authors and Managers</link>, second edition. He manages the
+        <link
+        href="http://www.linkedin.com/groups/DITA-Metrics-2916249/about"
+        >DITA Metrics</link> LinkedIn group and is a presenter at
+      content industry events. Mark is a Content Engineer and DITA
+      Educator for <link href="http://www.quark.com/">Quark</link>.</p>
+  </bio>
+  <picture href="../images/mlewis-7234-pp-mlewis.png"/>
+  <email>mlewis@ditametrics.com</email>
+  <website>http://www.ditametrics.com</website>
+  <twitter>@LewisDITAMetric</twitter>
+  <linkedin>http://www.linkedin.com/in/marklewisflorida/</linkedin>
+  <facebook>https://www.facebook.com/#!/mark.lewis.10420</facebook>
+  <description>
+    <p>The goal of a content standard is to facilitate the
+      implementation of a content strategy and the creation and
+      publication of content. Through the course of the content
+      lifecycle, multiple humans and systems may need to access and
+      affect content. A content standard facilitates this by providing a
+      common technical language so that content elements, metadata, and
+      processes are consistent and predictable. When content is
+      standards-based, interoperability between content, humans, and
+      systems is possible.</p>
+    <p>Processes help implement a content strategy and the phases of the
+      content lifecycle. These processes may be manual or automated.
+      Standards-based content is predictable to both humans and
+      machines, which supports functionality such as searching,
+      retrieval, sorting, filtering, indexing, tracking, and reporting.
+      These functions are then available to processes and to systems
+      such as content management, workflow, and publishing.</p>
+    <p>Standards also help facilitate a content strategy through
+      validation, transformation, and adaptation. Standards-based
+      content can be tested against the defined model to ensure that the
+      content conforms to the rules established to support the content
+      strategy. Content in one standard can be more readily transformed
+      or converted to another standard. This is necessary for publishing
+      and also allows content to be future proofed and adaptive. Content
+      that is format free, device independent, and scalable is future
+      proof and can adapt to new strategies, global strategies,
+      standards, and display devices that haven’t been designed yet. </p>
+    <p>When a standard is adopted, it allows humans and machines to play
+      well with each other in the content sandbox.</p>
+  </description>
+  <resources>
+    <list>
+      <item>
+        <p><link href="http://w3.org/">W3C (World Wide Web
+            Consortium)</link>, responsible for the HTML, CSS, SVG, and
+          XML standards.</p>
+      </item>
+      <item>
+        <p><link href="http://oasis-open.org/">OASIS (Organization for
+            the Advancement of Structured Information Standards)</link>,
+          responsible for the DITA and DocBook standards</p>
+      </item>
+    </list>
+  </resources>
+  <audio>https://soundcloud.com/theaudiowrangler/content-standard</audio>
+</topic>

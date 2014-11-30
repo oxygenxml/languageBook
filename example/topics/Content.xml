@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic xmlns="http://www.oxygenxml.com/ns/languageBook">
+  <author>Scott Abel</author>
+  <term>Content </term>
+  <what>Any text, image, video, decoration, or user-consumable elements that contribute to
+    comprehension.</what>
+  <why>Content is the single most-used way of understanding an organization's products or services,
+    stories, and brand.</why>
+  <bio>
+    <p>Known as <link href="http://www.thecontentwrangler.com/">The
+        Content Wrangler</link>, Scott Abel is an internationally
+      recognized global content strategist, lecturer at the University
+      of California, Berkeley, <link
+        href="http://www.ischool.berkeley.edu/people/faculty">School of
+        Information</link>, <link
+        href="http://www.econtentmag.com/Authors/4218-Scott-Abel.htm"
+        >EContent Magazine</link> columnist, and a vibrant speaker
+      frequently employed at content industry events. He co-produces
+      several content industry events including <link
+        href="http://www.contentstrategyworkshops.com/">Content Strategy
+        Workshops</link> and the <link
+        href="http://www.intelligentcontentconference.com/">Intelligent
+        Content Conference</link>. Scott’s message is clear: Content is
+      a business asset worth managing efficiently and effectively. He
+      works to help content-heavy organizations adopt the tools,
+      technologies, and techniques needed to connect content to
+      customers.</p>
+  </bio>
+  <picture href="../images/scottProfilePhoto.png"/>
+  <email>scott@thecontentwrangler.com</email>
+  <website>www.thecontentwrangler.com</website>
+  <twitter>@scottable</twitter>
+  <linkedin>http://www.linkedin.com/in/scottabel</linkedin>
+  <facebook>https://www.facebook.com/scottpatrickabel</facebook>
+  <description>
+    <p>Content can be described in several ways, some technical, others
+      conceptual:</p>
+    <list>
+      <item>
+        <p><strong>Contextualized data:</strong> Data is a context-free
+          value; content has enough context to aid with consumer
+          comprehension. For example, the number “12” is merely data.
+          Adding context to the data, such as 12th month or 12 years
+          old, imbues the data with meaning and creates content.</p>
+      </item>
+      <item>
+        <p><strong>The stuff inside a container:</strong> In a world
+          where content is virtually always touched by technology, this
+          means content is between a set of standardized markup tags,
+          allowing technology to automate the processing of content.</p>
+      </item>
+      <item>
+        <p><strong>An extension of the user experience:</strong> Content
+          is the treasure at the end of the treasure hunt. Without good
+          content, the best user experience falls flat.</p>
+      </item>
+    </list>
+    <p>Most importantly, <emphasis>content is a business
+        asset</emphasis> that we use to communicate with our customers,
+      prospects, and investors. Content is how we communicate our brand,
+      how we acquire and retain customers, how we drive our reputations,
+      and how we build a social enterprise. It is the lifeblood of any
+      organization. </p>
+    <p>To develop effective content strategies, it is important to
+      understand both the editorial and technical sides of content.</p>
+    <list>
+      <item>
+        <p>Editorially, content should be relevant, accurate,
+          informative, timely, and engaging and should conform to
+          editorial standards.</p>
+      </item>
+      <item>
+        <p>Technically, content should be standards-based, use
+          well-formed schemas, be semantically rich for filtering and
+          findability, and be structured to support automated
+          delivery.</p>
+      </item>
+    </list>
+    <p>This allows content to be converged, integrated, and
+      syndicated—all important aspects of leveraging content to its
+      fullest potential.</p>
+  </description>
+  <resources>
+    <p><link href="http://xmlpress.net/publications/the-content-pool/"
+        >The Content Pool: Leveraging Your Company’s Largest Hidden
+        Asset</link> by Alan J. Porter (XML Press)</p>
+    <p><link href="http://www.contentiscurrency.com/">Content is
+        Currency: Developing Powerful Content for Web and Mobile</link>
+      by Jon Wuebben (Nicholas Brealey Publishing)</p>
+  </resources>
+  <audio>https://soundcloud.com/theaudiowrangler/content</audio>
+</topic>

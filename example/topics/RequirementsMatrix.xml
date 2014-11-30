@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic xmlns="http://www.oxygenxml.com/ns/languageBook">
+  <author>Kate Kenyon</author>
+  <term>Requirements Matrix</term>
+  <what>A tool for assessing content priorities against defined business
+    needs, where prioritized business goals and requirements are mapped
+    against an organization’s content.</what>
+  <why>Aligns content to agreed business goals, meaning content
+    decisions are prioritized without politics. Content is transformed
+    into a business asset: measurable, auditable, and with a defined
+    return on investment.</why>
+  <bio>
+    <p>Kate Kenyon specializes in enterprise-level content strategy,
+      site migration, content management system specification, business
+      process design, and helping organizations set key performance
+      indicators: all the nasty, sticky bits of content strategy that
+      she finds weirdly interesting. She is active in the London content
+      strategy community and speaks at content strategy events across
+      the United Kingdom.</p>
+  </bio>
+  <picture href="../images/kkenyonProfilePhoto.png"/>
+  <email>Kate@whipsmartcontent.com</email>
+  <website>http://www.whipsmartcontent.com</website>
+  <twitter>@kate_kenyon</twitter>
+  <linkedin>http://www.linkedin.com/in/katekenyon</linkedin>
+  <facebook/>
+  <description>
+    <p>A content matrix sets a benchmark for current business
+      priorities, and aligns content to the delivery of those
+      priorities. Not all projects need a requirements matrix. It is
+      usually a large, multiple-tab spreadsheet that requires ownership
+      and ongoing updates as business priorities change. However, when
+      struggling with multiple or conflicted stakeholders who cannot
+      agree what content to produce and when, a matrix is a useful tool.
+      A requirements matrix can also be used for new sites, for major
+      content migrations, or even for orchestrating multi-platform
+      campaigns where content is being produced by more than one
+      team.</p>
+    <p>A requirements matrix should include a list of business
+      requirements, a description of the requirements, and a scoring
+      system (for example, 1-2-3 or Must Have/Should Have/Nice to Have)
+      that prioritizes content according to the stated business goals.
+      For example, “Will this content help company X capture a greater
+      share of Market Y?”</p>
+    <p>Prioritizing this way means that metrics become important. Some
+      matrices also include anticipated outcomes and metrics for success
+      so that content can be audited and a return on investment
+      established.</p>
+    <p>An organization’s ability to deliver on specific requirements can
+      also be included. Some matrices factor in technical complexity,
+      resourcing, frequency of updates, and other factors that could
+      affect the success of the content throughout its lifecycle.</p>
+    <p>A requirements matrix keeps stakeholders and businesses focused
+      on why they produce content, rather than simply what should be
+      created.</p>
+  </description>
+  <resources/>
+  <audio>https://soundcloud.com/theaudiowrangler/13-content-strategy-term-of-the-week-requirements-matrix</audio>
+</topic>

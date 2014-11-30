@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic xmlns="http://www.oxygenxml.com/ns/languageBook">
+  <author>Rahel Anne Bailie</author>
+  <term>Content Strategy</term>
+  <what>The analysis and planning to develop a repeatable system that
+    governs the management of content throughout the entire content
+    lifecycle.</what>
+  <why>Provides context, so that the organization’s vision can be
+    implemented in an integrated way, to meet business goals and project
+    objectives.</why>
+  <bio>
+    <p>Rahel Anne Bailie is an integrator of content strategy,
+      requirements analysis, information architecture, and content
+      management to increase ROI of product lifecycle content. She is
+      also a supporter of content structure and standards. She is
+      founder of <link href="http://intentionaldesign.ca/">Intentional
+        Design</link>, Fellow of <link href="http://stc.org/"
+      >STC</link>, co-author of Content Strategy: <link
+        href="http://www.thecontentstrategybook.com/">Connecting the
+        dots between business, brand, and benefits, and
+        co-producer</link> of <link
+        href="http://www.contentstrategyworkshops.com/">Content Strategy
+        Workshops</link>.</p>
+  </bio>
+  <picture href="../images/rabailieProfilePhoto.png"/>
+  <email>rabailie@intentionaldesign.ca</email>
+  <website>http://www.intentionaldesign.ca</website>
+  <twitter>@rahelab</twitter>
+  <linkedin>http://www.linkedin.com/in/rahelannebailie</linkedin>
+  <facebook>https://www.facebook.com/pages/Intentional-Design/208164155867779</facebook>
+  <facebook>https://www.facebook.com/thecontentstrategybook</facebook>
+  <facebook>https://www.facebook.com/ContentStrategyWorkshops</facebook>
+  <description>
+    <p>Strategy is defined as “alternatives chosen to make happen a
+      desired future, such as achievement of a goal or solution to a
+      problem.” A content strategy, then, is the analysis phase of a
+      business problem that determines how content can be improved,
+      either on the editorial or technical sides, to contribute to
+      corporate success.</p>
+    <p>To understand what content strategy <emphasis>is</emphasis>, we
+      need to eliminate what it <emphasis>is not</emphasis>. A content
+      strategy does not include activities that lead to project
+      deliverables, such as an audit—those are tactical-level aspects of
+      implementation. The strategy is the phase that comes
+        <emphasis>before</emphasis> any of these activities, and it
+      determines what activities are needed to achieve success.</p>
+    <p>Content strategy is the practice of helping organizations improve
+      their content performance, primarily through the analysis of
+      existing content problems and development of plans for
+      improvement. A content strategy will assess an organization’s
+      current state, understand the ideal future state, recognize where
+      the gaps are, and develop an implementation roadmap.  </p>
+    <p>The roadmap defines a content lifecycle specific to an
+      organization’s needs, so that the content can meet business goals.
+      Even when a project or contract addresses only a portion of the
+      overall need, the strategy should be designed to allow future
+      projects to become part of a unified strategy.</p>
+  </description>
+  <resources>
+    <p><link href="http://en.wikipedia.org/wiki/Management_consulting"
+        >http://en.wikipedia.org/wiki/Management_consulting</link></p>
+    <p><link href="http://www.managingenterprisecontent.com/">Managing
+        Enterprise Content: A Unified Content Strategy</link> by Ann
+      Rockley and Charles Cooper (New Riders)</p>
+  </resources>
+  <audio>https://soundcloud.com/theaudiowrangler/content-strategy</audio>
+</topic>
+<?oxy_options track_changes="on"?>
