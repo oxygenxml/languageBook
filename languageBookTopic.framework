@@ -139,7 +139,7 @@
 											<String>/images/Italic20.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/Italic16.gif</String>
+											<String>/images/Italic16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -459,7 +459,7 @@
 											<String>/images/Link20.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/Link16.gif</String>
+											<String>/images/Link16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
