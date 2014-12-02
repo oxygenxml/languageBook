@@ -1,0 +1,129 @@
+@import "content.css";
+@namespace lb "http://www.oxygenxml.com/ns/languageBook";
+
+
+lb|languageBook {
+  font-size:large;
+  display:block;
+  margin:1em;
+}
+
+
+/* add trasparent border to avoid flicker on hover */
+lb|title,
+lb|abstract,
+lb|topics,
+lb|topicref {
+  border-style:solid;
+  border-color:rgba(255, 255, 255, 0);
+  border-width:1px;
+}
+
+
+/* title */
+
+lb|title {
+  display:block;
+  font-size:2em;
+  font-weight:bold;
+  font-family:arial, helvetica, sans-serif;
+  padding:2px;
+  margin:10px;
+  padding-left:10px;
+}
+
+lb|title:empty {
+  color:#AAAAAA;
+  content:" ";
+  padding-left:0;
+}
+lb|title:empty:after {
+  content:"Section title";
+}
+lb|title:hover {
+  border:1px dashed gray;
+}
+lb|title:focus {
+  border:1px solid #0000BB;
+}
+
+lb|section > lb|title {
+  margin-top:2em;
+  font-size:1.5em;
+}
+
+
+
+/* abstract? */
+
+
+lb|abstract {
+  display:block;
+  font-size:1em;
+  padding:1em;
+  margin:10px;
+  padding-left:10px;
+}
+
+lb|abstract:empty {
+  color:#AAAAAA;
+  content:" ";
+}
+lb|abstract:empty:after {
+  content:"Short description for this section";
+}
+lb|abstract:hover {
+  border:1px dashed gray;
+}
+lb|abstract:focus,
+lb|abstract! *:focus {
+  border:1px solid #0000BB;
+}
+
+lb|topics {
+  display:block;
+  font-size:1em;
+  padding:2px;
+  margin:10px;
+  padding-left:10px;
+  margin-top:0.2em;
+}
+
+/* topic references */
+
+lb|topicref:before {
+  link: attr(href, url);
+  content:" " url(img/orangeRectangle.png) "    ";
+}
+
+
+lb|topicref:before:hover {
+  link: attr(href, url);
+  content:" " url(img/orangeRectangle.png) " " url(img/link.png);
+}
+
+lb|topicref {
+  margin-left:1em;
+  display:block;
+  content: " " oxy_xpath("if (@href!='' and doc-available(@href)) then doc(@href)/*/(*:term/string(), ' by ', *:author/string()) else 'invalid reference...'");
+  margin-bottom:1px;
+  margin-top:1px;
+  padding-bottom:5px;
+  padding-top:5px;
+}
+lb|topicref:hover {
+  border:1px dashed gray;
+}
+lb|topicref:focus {
+  padding-top:0px;
+  padding-bottom:0px;
+  border:1px solid #0000BB;
+  content : "";  
+}
+lb|topicref:after:focus {
+  content: " "  oxy_xpath("if (@href!='' and doc-available(@href)) then doc(@href)/*/*:term/string() else 'invalid reference...'") 
+      oxy_urlChooser(edit, '@href', columns, 40);
+}
+
+
+

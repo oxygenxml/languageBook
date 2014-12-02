@@ -1,0 +1,194 @@
+@import "languageBookTopic.css";
+@namespace lb "http://www.oxygenxml.com/ns/languageBook";
+
+lb|topic:before {
+  display:block;
+  color:#AAAAAA;
+  content: 
+    oxy_button(actionID, 'edit')
+        " | "    
+    oxy_button(actionID, 'full')
+    oxy_button(actionID, 'book')
+    oxy_button(actionID, 'card')
+    ;
+}
+
+lb|topic:edit:before {
+  display:block;
+  color:#AAAAAA;
+  content: 
+    oxy_button(actionID, 'done')
+       " | "
+    oxy_button(actionID, 'full')
+    oxy_button(actionID, 'book')
+    oxy_button(actionID, 'card')
+  ;
+}
+
+lb|topic {
+  border-style:solid;
+  border-color:rgba(255, 255, 255, 0);
+  border-width:1px;
+}
+
+lb|topic:edit lb|p:after,
+lb|topic:edit lb|p:after:hover {
+  display:block;
+  margin-top:0.5em;
+  color:#AAAAAA;
+  content: 
+    oxy_button(actionID, 'strong', 
+        showIcon, true,
+        actionContext, caret)
+    " "
+    oxy_button(actionID, 'emphasis', 
+        showIcon, true,
+        actionContext, caret)
+    " "
+    oxy_button(actionID, 'link', 
+        showIcon, true,
+        actionContext, caret)
+        " | "
+    oxy_button(actionID, 'paragraph',
+        showIcon, true)    
+    " "
+    oxy_button(actionID, 'list',
+        showIcon, true)
+    " "
+    oxy_button(actionID, 'delete',
+        showIcon, true, 
+        actionContext, element)  
+    "\A \A"
+    ;
+}
+
+lb|topic:edit lb|link{
+  link:none;
+}
+
+lb|topic:edit lb|picture:hover:after,
+lb|topic:edit lb|picture::focus:after,
+lb|topic:edit lb|link:after,
+lb|topic:edit lb|picture:after{
+  content:
+    " "
+    oxy_textfield(edit, "@href", columns, 30);
+}
+
+lb|topic:edit lb|link:EMPTY {
+  color:#AAAAAA;
+  content:"linktext"
+}
+
+lb|topic:edit lb|p:empty {
+  color:#AAAAAA;
+  content:"Paragraph"; 
+}
+
+
+
+/* card layout */
+
+
+lb|topic:card {
+  width:22em;
+  border:1px solid orange;
+
+}
+lb|topic:card > * {
+  font-family:sans-serif;
+}
+
+lb|topic:card lb|term, 
+lb|topic:card lb|what, 
+lb|topic:card lb|why {
+  text-align:center;
+  color:black;
+  font-style:normal;
+}
+
+ 
+lb|topic:card lb|what:hover:before {
+  content: "What is it?";    
+}
+
+lb|topic:card lb|why:hover:before {
+  content: "Why is this important?";    
+}
+
+lb|topic:card lb|what:after,
+lb|topic:card lb|why:after {
+   display:block;
+   content:"   ";
+   text-align:right;
+}
+
+ 
+lb|topic:card lb|what:hover:after,
+lb|topic:card lb|why:hover:after{
+  content:
+    " "
+    oxy_label(
+      text, oxy_xpath("concat(count(tokenize(normalize-space(.), ' ')), '\A0words ')"),
+      color, #AAAAAA,
+      styles, "font-size:small"
+    )
+  ;
+}
+
+
+lb|topic:card lb|author,
+lb|topic:card lb|bio,
+lb|topic:card lb|picture,
+lb|topic:card lb|email,
+lb|topic:card lb|website,
+lb|topic:card lb|twitter,
+lb|topic:card lb|linkedin,
+lb|topic:card lb|facebook,
+lb|topic:card lb|description,
+lb|topic:card lb|resources,
+lb|topic:card lb|audio {
+  display:none;
+}
+
+
+
+
+/* book */
+
+
+lb|topic:book lb|picture,
+lb|topic:book lb|linkedin,
+lb|topic:book lb|facebook,
+lb|topic:book lb|resources,
+lb|topic:book lb|audio {
+  display:none;
+}
+
+lb|topic:book lb|bio:before {
+  color:black;
+  font-family:arial, helvetica, sans-serif;
+  font-size:1.5em;
+  font-weight:bold;
+  content:"About " oxy_xpath("../*:author/string()");
+  margin-top:3em;
+  margin-bottom:0.5em;
+  padding-top:0.5em;
+  border-top:2px solid orange;
+}
+
+lb|topic:book lb|term {
+  color:orange;
+  font-style:italic;
+  margin-bottom:2em;
+}
+
+lb|topic:book lb|description {
+  padding-top : 3em;
+}
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+@namespace lb "http://www.oxygenxml.com/ns/languageBook";
+
+
+lb|p {
+  display:block;
+  margin-bottom:1em;
+}
+
+lb|p:empty:hover {
+  content:" ";
+}
+
+lb|p:hover:after {
+  content:
+    " "
+    oxy_label(
+      text, oxy_xpath("concat(count(tokenize(normalize-space(.), ' ')), '\A0words ')"),
+      color, #999999,
+      styles, "font-size:small"
+    )
+  ;
+}
+
+lb|link[href]:before {
+    link: attr(href);
+    content:url(img/link.png);
+    display:inline;
+    text-decoration:underline;
+    color:navy;
+}
+lb|link:focus:after {
+  content: " " oxy_urlChooser(edit, '@href', columns, 30);
+}
+
+lb|link {
+  color:navy;
+}
+
+lb|strong {
+  font-weight:bold;
+}
+
+lb|emphasis {
+  font-style:italic;
+  padding-right:2px;
+}
+
+lb|list {
+  display:block;
+  margin-left:2em;
+}
+
+lb|item > *:first-child:before {
+  content : url(img/orangeRectangle.png) "\A0\A0";
+  display:inline;
+}
+
+lb|item {
+  display:inline;
+}
+
+lb|item lb|p {
+  margin-bottom:0.5em;
+}

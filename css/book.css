@@ -1,0 +1,35 @@
+@import "languageBookTopic.css";
+@namespace lb "http://www.oxygenxml.com/ns/languageBook";
+
+
+lb|picture,
+lb|linkedin,
+lb|facebook,
+lb|resources,
+lb|audio {
+  display:none;
+}
+
+lb|bio:before {
+  color:black;
+  font-family:arial, helvetica, sans-serif;
+  font-size:1.5em;
+  font-weight:bold;
+  content:"About " oxy_xpath("../*:author/string()");
+  margin-top:3em;
+  margin-bottom:0.5em;
+  padding-top:0.5em;
+  border-top:2px solid orange;
+}
+
+lb|term {
+  color:orange;
+  font-style:italic;
+  margin-bottom:2em;
+}
+
+lb|description {
+  padding-top : 3em;
+}
+
+

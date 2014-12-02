@@ -1,0 +1,67 @@
+@import "languageBookTopic.css";
+@namespace lb "http://www.oxygenxml.com/ns/languageBook";
+
+
+lb|topic {
+  margin-left:2em!important;
+  margin-top:2em!important;
+  width:22em;
+  border:1px solid orange;
+  font-family:sans-serif;
+}
+
+lb|term, 
+lb|what, 
+lb|why {
+  text-align:center;
+  color:black;
+  font-style:normal;
+}
+
+ 
+lb|what:hover:before {
+  content: "What is it?";    
+}
+
+lb|why:hover:before {
+  content: "Why is this important?";    
+}
+
+lb|what:after,
+lb|why:after {
+   display:block;
+   content:"   ";
+   text-align:right;
+}
+
+ 
+lb|what:hover:after,
+lb|why:hover:after{
+  content:
+    " "
+    oxy_label(
+      text, oxy_xpath("concat(count(tokenize(normalize-space(.), ' ')), '\A0words ')"),
+      color, #AAAAAA,
+      styles, "font-size:small"
+    )
+  ;
+}
+
+
+lb|author,
+lb|bio,
+lb|picture,
+lb|email,
+lb|website,
+lb|twitter,
+lb|linkedin,
+lb|facebook,
+lb|description,
+lb|resources,
+lb|audio {
+  display:none;
+}
+
+
+
+

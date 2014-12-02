@@ -1,0 +1,413 @@
+@import "content.css";
+@namespace lb "http://www.oxygenxml.com/ns/languageBook";
+
+/* blocks */
+/*=============================*/
+lb|topic,
+lb|author,
+lb|term,
+lb|what:before,
+lb|what,
+lb|why:before,
+lb|why,
+lb|bio:before,
+lb|bio,
+lb|picture,
+lb|email,
+lb|website,
+lb|twitter,
+lb|linkedin,
+lb|facebook,
+lb|description:before,
+lb|description,
+lb|resources:before,
+lb|resources,
+lb|audio
+{
+  display:block;
+}
+
+
+/* hover behavior */
+/* ============================= */
+/* add trasparent border to avoid flicker on hover */
+lb|author,
+lb|term,
+lb|what,
+lb|why,
+lb|bio,
+lb|picture,
+lb|email,
+lb|website,
+lb|twitter,
+lb|linkedin,
+lb|facebook,
+lb|description,
+lb|resources,
+lb|audio {
+  border-style:solid;
+  border-color:rgba(255, 255, 255, 0);
+  border-width:1px;
+  
+}
+
+lb|author:hover,
+lb|term:hover,
+lb|what:hover,
+lb|why:hover,
+lb|bio:hover,
+lb|picture:hover,
+lb|email:hover,
+lb|website:hover,
+lb|twitter:hover,
+lb|linkedin:hover,
+lb|facebook:hover,
+lb|description:hover,
+lb|resources:hover,
+lb|audio:hover {
+  border:1px dashed gray;
+}
+
+lb|email:before:hover,
+lb|website:before:hover,
+lb|twitter:before:hover,
+lb|linkedin:before:hover,
+lb|facebook:before:hover,
+lb|audio:before:hover
+{
+  border-right:1px dashed gray;
+}
+
+
+/* empty hints */
+/* ============================= */
+/* add invisible content to have the caret positioned nicely */
+lb|term:empty {
+  color:#eed5b7;
+  /*zero width space*/
+  content:"​";
+}
+
+lb|author:empty,
+lb|what:empty,
+lb|why:empty,
+lb|bio:empty,
+lb|email:empty,
+lb|website:empty,
+lb|twitter:empty,
+lb|linkedin:empty,
+lb|facebook:empty,
+lb|description:empty,
+lb|resources:empty,
+lb|audio:empty {
+  color:#AAAAAA;
+  /*zero width space*/
+  content:"​";
+}
+
+
+lb|author:empty:after {
+  content:"Firstname Lastname";
+}
+lb|term:empty:after {
+  content:"Term you write about";
+}
+lb|what:empty:after {
+  content:"Describe what this term represents";
+}
+lb|why:empty:after {
+  content:"Describe why this is important";
+}
+lb|bio:empty:after {
+  content:"Information about the author of this topic";
+}
+lb|email:empty:after {
+  content:"email@address.com";
+}
+lb|website:empty:after {
+  content:"www.yourwebsite.com";
+}
+lb|twitter:empty:after {
+  content:"@username";
+}
+lb|linkedin:empty:after {
+  content:"www.linkedin.com/in/username";
+}
+lb|facebook:empty:after {
+  content:"https://www.facebook.com/your.name";
+}
+lb|description:empty:after {
+  content:"Describe why we need to know about this";
+}
+lb|resources:empty:after {
+  content:"Enter resources related to this topic";
+}
+lb|audio:empty:after {
+  content:"URL pointing to an audio recording of this topic";
+}
+
+
+/* topic */
+lb|topic {
+  font-size:large;
+  margin:1em;
+  padding-bottom:1em;
+  font-family:arial, helvetica, sans-serif;
+}
+
+/* author and term */
+
+lb|author, 
+lb|term {
+  font-size:2em;
+  font-weight:bold;
+  margin:0.25em;
+  padding:0.1em;
+  padding-left:0.25em;
+}
+
+/* term */
+lb|term {
+  color:orange;
+  margin-bottom:2em;
+}
+
+
+/* what is it? */
+/* why is this important? */
+
+lb|what:before,
+lb|why:before {
+  color:black;
+  font-size:1.5em;
+  font-weight:bold;
+  margin-bottom:0.5em;
+}
+
+lb|what:before {
+  content:"What is it?";
+}
+lb|why:before {
+  content:"Why is this important?";
+}
+
+lb|what:hover:before,
+lb|why:hover:before {
+  -oxy-append-content:
+    " "
+    oxy_label(
+      text, oxy_xpath("concat(count(tokenize(normalize-space(.), ' ')), ' words ')"),
+      color, #AAAAAA,
+      styles, "font-size:small"
+    )
+  ;
+}
+
+lb|what,
+lb|why {
+  font-size:1em;
+  padding:0.1em;
+  padding-left:0.5em;
+  margin:0.5em;
+  margin-top:2em;
+}
+
+/* Bio */
+
+lb|bio:before {
+  color:black;
+  font-size:1.5em;
+  font-weight:bold;
+  content:"About " oxy_xpath("../*:author/string()"); 
+  margin-bottom:0.5em;
+  padding-top:0.5em;
+}
+
+lb|bio:hover:before {
+  -oxy-append-content:
+    " "
+    oxy_label(
+      text, oxy_xpath("concat(count(tokenize(normalize-space(.), ' ')), ' words ')"),
+      color, #AAAAAA,
+      styles, "font-size:small"
+    )
+  ;
+}
+
+lb|bio {
+  font-size:1em;
+  padding:0.1em;
+  margin:0.5em;
+  padding-left:0.5em;
+  margin-top:2em;
+}
+
+/* picture */
+
+lb|picture:not(href):before {
+  content : 'No author picture provided...\A' ;
+  padding-bottom:0.2em;
+  color:#AAAAAA;
+}
+lb|picture:not(href):hover:after,
+lb|picture:not(href):focus:after
+{
+  content: " " oxy_urlChooser(edit, '@href', columns, 60);
+}
+lb|picture:not(href):hover {
+  padding-bottom:1em;
+  padding-top:1em;
+}
+
+lb|picture[href]:before {
+  content : oxy_xpath("if (@href='') then 'No author picture provided...' else ''") attr(href, url) " ";
+}
+
+lb|picture {
+  font-size:1em;
+  padding:1em;
+  padding-left:0.5em;
+  margin:0.5em;
+}
+
+lb|picture[href]:hover {
+  padding-bottom:1em;
+  padding-top:1em;
+}
+
+lb|picture[href]:hover:after {
+  content: " " oxy_label(text, oxy_xpath("@href"), color, #AAAAAA);
+}
+
+lb|picture[href]:focus {
+  padding-bottom:1em;
+  padding-top:1em;
+}
+lb|picture[href]:focus:after {
+  content: " " oxy_urlChooser(edit, '@href', columns, 40);
+}
+
+
+
+/* email, website, twitter, linkedin, facebok and audio */
+
+lb|email:before,
+lb|website:before,
+lb|twitter:before,
+lb|linkedin:before,
+lb|facebook:before,
+lb|audio:before {
+  color:black;
+  font-size:1.1em;
+  font-weight:bold;
+  width:5.5em;
+}
+
+lb|email:before {
+  content:"Email:\A0\A0\A0\A0\A0\A0\A0\A0";
+}
+lb|website:before {
+  content:"Website:\A0\A0\A0\A0";
+}
+lb|twitter:before {
+  content:"Twitter:\A0\A0\A0\A0\A0\A0";
+}
+lb|linkedin:before {
+  content:"LinkedIn:\A0\A0\A0";
+}
+lb|facebook:before {
+  content:"Facebook:\A0";
+}
+lb|audio:before {
+  content:"Audio:\A0\A0\A0\A0\A0\A0\A0";
+}
+
+lb|email,
+lb|website,
+lb|twitter,
+lb|linkedin,
+lb|facebook,
+lb|audio {
+  font-size:1em;
+  margin:0.5em;
+  margin-bottom:0.1em;
+  margin-top:0.2em;
+  padding:0.1em;
+  padding-left:0.5em;
+  content:" ";
+  white-space:pre;
+}
+
+/* description and resources */
+
+lb|description:before,
+lb|resources:before {
+  color:black;
+  font-size:1.5em;
+  font-weight:bold;
+  margin-bottom:0.5em;
+}
+
+lb|description:before {
+  content:"Why do we need to know about this? \A";
+}
+
+lb|resources:before {
+  content:"Additional Resources \A";
+}
+
+lb|description:hover:before {
+  -oxy-append-content:
+    oxy_label(
+      text, oxy_xpath("concat(count(tokenize(normalize-space(.), ' ')), ' words ')"),
+      color, #AAAAAA,
+      styles, "font-weight:normal;font-size:small;width:100%;text-align:left;"
+    )
+  ;
+}
+
+lb|description,
+lb|resources {
+  font-size:1em;
+  padding:0.1em;
+  margin:0.5em;
+  padding-left:0.5em;
+  margin-top:3em;
+  margin-bottom:2em;
+}
+
+/*on focus - last section*/
+/*=============================*/
+lb|author:focus,
+lb|term:focus,
+lb|what:focus,
+lb|why:focus,
+lb|bio:focus,
+lb|bio! *:focus,
+lb|bio! * > *:focus,
+lb|bio! * > * > *:focus,
+lb|bio! * > * > * > *:focus,
+lb|picture:focus,
+lb|email:focus,
+lb|website:focus,
+lb|twitter:focus,
+lb|linkedin:focus,
+lb|facebook:focus,
+lb|description:focus,
+lb|description! > *:focus,
+lb|description! * > *:focus,
+lb|description! * > * > *:focus,
+lb|description! * > * > * > *:focus,
+lb|resources:focus,
+lb|resources! *:focus,
+lb|resources! * > *:focus,
+lb|resources! * > * > *:focus,
+lb|resources! * > * > * > *:focus,
+lb|audio:focus {
+  border:1px solid #0000BB;
+}
+
+
+
+
+

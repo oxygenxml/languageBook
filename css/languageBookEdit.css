@@ -1,0 +1,26 @@
+@import "languageBook.css";
+@namespace lb "http://www.oxygenxml.com/ns/languageBook";
+
+lb|languageBook:before {
+  display:block;
+  content: oxy_button(actionID, 'edit');
+}
+
+lb|languageBook:edit:before {
+  content: oxy_button(actionID, 'done');
+}
+
+
+lb|languageBook:edit lb|topicref:after {
+  content: 
+    " "  
+    oxy_xpath("if (@href!='' and doc-available(@href)) then doc(@href)/*/*:term/string() else 'invalid reference...'") 
+    "\A        "
+    oxy_urlChooser(edit, '@href', columns, 40)
+    " "
+    oxy_button(actionID, "delete")
+    "\A        "
+    oxy_button(actionID, "add.topicref")
+    "\A"
+    ;
+}
