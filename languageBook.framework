@@ -9,7 +9,7 @@
 						<null/>
 					</field>
 					<field name="name">
-						<String>Labguage Book</String>
+						<String>Language Book</String>
 					</field>
 					<field name="schemaDescriptor">
 						<docTypeSchema>
@@ -39,7 +39,7 @@
 											<String>edit</String>
 										</field>
 										<field name="alternate">
-											<Boolean>true</Boolean>
+											<Boolean>false</Boolean>
 										</field>
 									</cssFile>
 									<cssFile>
@@ -50,13 +50,16 @@
 											<String>view</String>
 										</field>
 										<field name="alternate">
-											<Boolean>false</Boolean>
+											<Boolean>true</Boolean>
 										</field>
 									</cssFile>
 								</cssFile-array>
 							</field>
 							<field name="mergeCSSsFromDocument">
 								<Boolean>true</Boolean>
+							</field>
+							<field name="multipleAlternateSelectionEnabled">
+								<Boolean>false</Boolean>
 							</field>
 							<field name="actionDescriptors">
 								<action-array>
@@ -106,6 +109,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -153,6 +159,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -195,6 +204,9 @@
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -262,6 +274,9 @@
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 								</action-array>
