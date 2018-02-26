@@ -1,5 +1,4 @@
 @import "content.css";
-@import "page.css";
 @namespace lb "http://www.oxygenxml.com/ns/languageBook";
 
 /* blocks */
@@ -225,7 +224,7 @@ lb|bio:before {
 }
 
 lb|bio:hover:before {
-  -oxy-append-content:
+  content:"About " oxy_xpath("../*:author/string()")
     " "
     oxy_label(
       text, oxy_xpath("concat(count(tokenize(normalize-space(.), ' ')), ' words ')"),

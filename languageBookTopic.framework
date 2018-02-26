@@ -39,7 +39,7 @@
 											<String>edit</String>
 										</field>
 										<field name="alternate">
-											<Boolean>true</Boolean>
+											<Boolean>false</Boolean>
 										</field>
 									</cssFile>
 									<cssFile>
@@ -50,7 +50,7 @@
 											<String>full</String>
 										</field>
 										<field name="alternate">
-											<Boolean>false</Boolean>
+											<Boolean>true</Boolean>
 										</field>
 									</cssFile>
 									<cssFile>
@@ -80,6 +80,9 @@
 							<field name="mergeCSSsFromDocument">
 								<Boolean>true</Boolean>
 							</field>
+							<field name="multipleAlternateSelectionEnabled">
+								<Boolean>false</Boolean>
+							</field>
 							<field name="actionDescriptors">
 								<action-array>
 									<action>
@@ -96,7 +99,7 @@
 											<String>/images/Bold20.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/Bold16.gif</String>
+											<String>/images/Bold16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -123,6 +126,9 @@
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -167,6 +173,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -182,7 +191,7 @@
 											<String>/images/Paragraph20.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/Paragraph16.gif</String>
+											<String>/images/Paragraph16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -242,6 +251,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -254,10 +266,10 @@
 											<String>Add a new list after the current element</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/UnorderedList20.gif</String>
+											<String>/images/UnorderedList20.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/UnorderedList16.gif</String>
+											<String>/images/UnorderedList16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -321,6 +333,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -333,10 +348,10 @@
 											<String>Delete the current element</String>
 										</field>
 										<field name="largeIconPath">
-											<String>/images/DeleteElementTags20.gif</String>
+											<String>/images/DeleteElementTags20.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/DeleteElementTags16.gif</String>
+											<String>/images/DeleteElementTags16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -444,6 +459,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -486,6 +504,9 @@
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -534,6 +555,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -580,6 +604,9 @@
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -628,6 +655,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -674,6 +704,9 @@
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -722,6 +755,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -769,6 +805,9 @@
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -812,6 +851,9 @@ remove.book</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 									<action>
@@ -857,6 +899,9 @@ set.book</String>
 												</actionMode>
 											</actionMode-array>
 										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
 									</action>
 									<action>
 										<field name="id">
@@ -900,6 +945,9 @@ set.card</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
 										</field>
 									</action>
 								</action-array>

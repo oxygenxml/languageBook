@@ -1,4 +1,5 @@
 @import "content.css";
+@import "page.css";
 @namespace lb "http://www.oxygenxml.com/ns/languageBook";
 
 
@@ -93,16 +94,15 @@ lb|topics {
 
 lb|topicref:before(2) {
   link: attr(href, url);
-  content:" " url(img/orangeRectangle.png) ;
+  content:" " url(img/orangeRectangle.png) " ";
 }
-
 lb|topicref:before(1) {
   link: attr(href, url);
-  content: " " url(img/link.png);
+  content:" " url(img/link.png);
   visibility: hidden;
 }
-lb|topicref:hover:before(1) {
-  visibility: visible;
+lb|topicref:before(1):hover {
+  visibility:visible;
 }
 
 lb|topicref {
@@ -113,7 +113,6 @@ lb|topicref {
   margin-top:1px;
   padding-bottom:5px;
   padding-top:5px;
-  border: 1px solid transparent;
 }
 lb|topicref:hover {
   border:1px dashed gray;

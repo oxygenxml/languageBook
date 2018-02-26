@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+  xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+  <define name="topLevelContent">
+    <zeroOrMore>
+      <choice>
+        <ref name="p.element"/>
+        <ref name="list.element"/>
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <define name="p.element">
+    <element name="p">
+      <ref name="inlineContent"/>
+    </element>
+  </define>
+
+  <define name="inlineContent">
+    <mixed>
+      <zeroOrMore>
+        <choice>
+          <ref name="link.element"/>
+          <ref name="strong.element"/>  
+          <ref name="emphasis.element"/>
+        </choice>
+      </zeroOrMore>
+    </mixed>
+  </define>
+
+  <define name="link.element">
+    <element name="link">
+      <attribute name="href">
+        <data type="anyURI"/>
+      </attribute>
+      <text/>
+    </element>
+  </define>
+
+  <define name="strong.element">
+    <element name="strong">
+      <text/>
+    </element>
+  </define>
+  
+  <define name="emphasis.element">
+    <element name="emphasis">
+      <text/>
+    </element>
+  </define>
+
+  <define name="list.element">
+    <element name="list">
+      <oneOrMore>
+        <ref name="item.element"/>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <define name="item.element">
+    <element name="item">
+      <ref name="p.element"/>
+      <ref name="topLevelContent"/>
+    </element>
+  </define>
+
+</grammar>
